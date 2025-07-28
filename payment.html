@@ -29,7 +29,7 @@
     const price = params.get('price') || '0';
     const vendor = params.get('vendor') || 'vendorname';
 
-    const upiId = `sashriya.murali@oksbi`;
+    const upiId = `sashriya@oksbi`;
     const upiData = `upi://pay?pa=${upiId}&pn=${vendor}&am=${price}&cu=INR&tn=${encodeURIComponent(product)}`;
     const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(upiData)}`;
 
